@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTL Direction</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand">
+        <img src="icons/icon32.png" alt="RTL" class="brand-icon" />
+        <div>
+          <h1 class="brand-title" data-i18n="appTitle">RTL Direction</h1>
+          <p class="brand-desc" data-i18n="appDesc">Layout Inspector</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <button id="btnLangToggle" class="lang-toggle" title="Switch Language">
+          <svg class="icon-svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="lang-code active" id="langEn">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-code" id="langAr">عربي</span>
+        </button>
+        <div id="statusBadge" class="status-pill" data-i18n="statusReady">Ready</div>
+      </div>
+    </header>
+
+    <!-- Page Direction Switcher -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-title" data-i18n="secPageDir">PAGE DIRECTION</span>
+      </div>
+      <div class="segmented-control">
+        <button id="btnPageLtr" class="segment-btn active" data-dir="ltr">
+          <svg class="icon-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <span data-i18n="btnPageLtr">LTR</span>
+        </button>
+        <button id="btnPageRtl" class="segment-btn" data-dir="rtl">
+          <svg class="icon-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span data-i18n="btnPageRtl">RTL</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Element Inspector Hero Action -->
+    <section class="section">
+      <button id="btnInspect" class="hero-btn">
+        <svg class="hero-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+        <div class="hero-text">
+          <strong data-i18n="btnInspectTitle">Inspect Element</strong>
+          <small data-i18n="btnInspectDesc">Click any element to toggle direction</small>
+        </div>
+      </button>
+    </section>
+
+    <!-- Quick Tools -->
+    <section class="section">
+      <div class="tools-grid">
+        <button id="btnResetElement" class="tool-btn">
+          <svg class="icon-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20H7L3 16C2 15 2 13 3 12L13 2L22 11L20 20Z"/><line x1="18" y1="13" x2="11" y2="20"/></svg>
+          <span data-i18n="btnResetElement">Reset Pick</span>
+        </button>
+        <button id="btnResetAll" class="tool-btn danger">
+          <svg class="icon-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          <span data-i18n="btnResetAll">Reset All</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Options Box -->
+    <section class="section options-box">
+      <label class="checkbox-row">
+        <input type="checkbox" id="chkDualMode" checked />
+        <span class="checkbox-label">
+          <strong data-i18n="chkDualModeTitle">Set <code>dir="rtl"</code> attribute</strong>
+          <small data-i18n="chkDualModeDesc">For Tailwind & CSS frameworks</small>
+        </span>
+      </label>
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="chkForceAlign" />
+        <span class="checkbox-label">
+          <strong data-i18n="chkForceAlignTitle">Force <code>text-align: right</code></strong>
+          <small data-i18n="chkForceAlignDesc">Aligns hardcoded LTR text blocks</small>
+        </span>
+      </label>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <span class="shortcut-tip" data-i18n="footerTip">Press <kbd>Esc</kbd> on page to exit inspector</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
