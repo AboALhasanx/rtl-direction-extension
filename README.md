@@ -1,10 +1,24 @@
-# RTL Direction & Layout Inspector
+![RTL Direction & Layout Inspector](assets/banner.png)
+
+<p align="center">
+  <strong>فاحص واختبار توافق الواجهات العربية (RTL) — Developer-Grade Layout & Direction Inspector</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Manifest-V3-38bdf8?style=flat-square" alt="Manifest V3" />
+  <img src="https://img.shields.io/badge/Performance-O(1)%20Zero%20Jank-10b981?style=flat-square" alt="Performance" />
+  <img src="https://img.shields.io/badge/Bilingual-English%20%7C%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-3b82f6?style=flat-square" alt="Bilingual" />
+  <img src="https://img.shields.io/badge/Tailwind%20%26%20Bootstrap-Compatible-8b5cf6?style=flat-square" alt="Tailwind & Bootstrap" />
+  <img src="https://img.shields.io/badge/License-MIT-gray?style=flat-square" alt="License MIT" />
+</p>
+
+---
 
 A lightweight, developer-grade Chrome and Edge extension (Manifest V3) for inspecting and testing Right-to-Left (RTL) layout compatibility on any webpage.
 
 ---
 
-## Key Features
+## 🎯 Key Features
 
 - **Interactive Element Inspector**: Hover over any component to view its tag/class selector and click to toggle RTL/LTR direction instantly.
 - **Segmented Page Switcher**: 1-click toggle between `LTR Normal` and `RTL Mirrored` across `<html>` and `<body>`.
@@ -17,7 +31,7 @@ A lightweight, developer-grade Chrome and Edge extension (Manifest V3) for inspe
 
 ---
 
-## Installation
+## 🚀 Installation
 
 1. Clone or download this repository:
    ```bash
@@ -30,14 +44,14 @@ A lightweight, developer-grade Chrome and Edge extension (Manifest V3) for inspe
 
 ---
 
-## Usage & Shortcuts
+## ⌨️ Usage & Shortcuts
 
-- **Inspect Elements**: Open the extension popup and click **Inspect Element** (or press the hero button). Click any element on the page to toggle its direction.
+- **Inspect Elements**: Open the extension popup and click **Inspect Element**. Click any element on the page to toggle its direction.
 - **Exit Inspector**: Press <kbd>Esc</kbd> or click **Done** in the top HUD banner.
 - **Reset All**: Click **Reset All** in the popup to clear all applied RTL overrides without reloading the page.
 
 ---
 
-## License
+## 📄 License
 
 [MIT](LICENSE)
