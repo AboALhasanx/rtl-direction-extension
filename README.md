@@ -1,6 +1,10 @@
 ![RTL Direction & Layout Inspector](assets/banner.png)
 
 <p align="center">
+  <strong>English</strong> • <a href="README.ar.md">العربية</a>
+</p>
+
+<p align="center">
   <strong>فاحص واختبار توافق الواجهات العربية (RTL) — Developer-Grade Layout & Direction Inspector</strong>
 </p>
 
